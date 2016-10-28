@@ -87,24 +87,5 @@ $(document).ready(function() {
       }
     };
 
-    // color = Math.floor(Math.random()*500);
-    // size = Math.floor(Math.random()*500);
-    // if (color < 175) {
-    //   .addClass()
-    // } else if (color >= 175 && color < 350 ) {
-    //   .addClass()
-    // } else if (color >= 350) {
-    //   .addClass()
-    // }
-    // if (size < 125) {
-    //   $("#output").find('div:last').addClass("1");
-    // } else if (size >= 125 && size < 250 ) {
-    //   $("#output").find('div:last').addClass("2");
-    // } else if (size >= 250 && size < 375) {
-    //   $("#output").find('div:last').addClass("3");
-    // } else if (size >= 375) {
-    //   $("#output").find('div:last').addClass("4");
-    // }
-
   });
 });
