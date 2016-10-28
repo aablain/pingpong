@@ -1,6 +1,6 @@
 # _{Ping-Pong}_
 
-{http://www.aablain.github.io/pingpong/}
+{http://aablain.github.io/pingpong/}
 
 #### _{Counts to number you want, replacing specific numbers with specific words}, {October 28th, 2016}_
 
