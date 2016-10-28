@@ -57,33 +57,34 @@ $(document).ready(function() {
     event.preventDefault();
     $("#output").empty();
     var countTo = $("#countTo").val();
-    var countBy = 1
+    var countBy = 1 // This is telling the program to count by 1
     var size;
-    var yayaya;
-    var wawawa;
-    var rarara;
+    var yayaya; // Place-holder for font-size selector
+    var wawawa; // Place-holder for font-color selector
+    var rarara; // Place-holder for font-type selector
+
+    // This Next Part will display all the numbers!
     for (i = countBy; i <= countTo; i += countBy) {
       if (i % 3 === 0 && i % 5 === 0) {
-        // debugger;
-        var cat = deciding(yayaya);
-        var dog = decidingColor(wawawa);
-        var frog = decidingFont(rarara);
-        $("#output").append("<div>" + "<p>" + "pingpong" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog);
+        var sizeTheFont = deciding(yayaya);
+        var colorFont = decidingColor(wawawa);
+        var typeOfFont = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + "(ping-pong)" + "</p>" + "</div>").find('div:last').addClass(sizeTheFont).addClass(colorFont).addClass(typeOfFont);
       } else if (i % 3 === 0) {
-        var cat = deciding(yayaya);
-        var dog = decidingColor(wawawa);
-        var frog = decidingFont(rarara);
-        $("#output").append("<div>" + "<p>" + "ping" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog).addClass(frog);
+        var sizeTheFont = deciding(yayaya);
+        var colorFont = decidingColor(wawawa);
+        var typeOfFont = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + "ping" + "</p>" + "</div>").find('div:last').addClass(sizeTheFont).addClass(colorFont).addClass(typeOfFont);
       } else if (i % 5 === 0) {
-        var cat = deciding(yayaya);
-        var dog = decidingColor(wawawa);
-        var frog = decidingFont(rarara);
-        $("#output").append("<div>" + "<p>" + "pong" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog).addClass(frog);
+        var sizeTheFont = deciding(yayaya);
+        var colorFont = decidingColor(wawawa);
+        var typeOfFont = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + "pong" + "</p>" + "</div>").find('div:last').addClass(sizeTheFont).addClass(colorFont).addClass(typeOfFont);
       } else {
-        var cat = deciding(yayaya);
-        var dog = decidingColor(wawawa);
-        var frog = decidingFont(rarara);
-        $("#output").append("<div>" + "<p>" + i + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog).addClass(frog);
+        var sizeTheFont = deciding(yayaya);
+        var colorFont = decidingColor(wawawa);
+        var typeOfFont = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + i + "</p>" + "</div>").find('div:last').addClass(sizeTheFont).addClass(colorFont).addClass(typeOfFont);
       }
     };
 
