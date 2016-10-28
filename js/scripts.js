@@ -1,21 +1,4 @@
 //Business End Logic
-// function figureItOut(countTo) {
-//   var countBy = 1
-//   for (i = countBy; i <= countTo; i += countBy) {
-//     if (i % 3 === 0 && i % 5 === 0) {
-//       $("#output").append("<li>" + "pingpong" + "</li>");
-//     } else if (i % 3 === 0) {
-//       $("#output").append("<li>" + "ping" + "</li>");
-//     } else if (i % 5 === 0) {
-//       $("#output").append("<li>" + "pong" + "</li>");
-//     } else {
-//       $("#output").append("<li>" + i + "</li>");
-//     }
-//   }
-//   return;
-// };
-
-
 
 
 
@@ -26,20 +9,80 @@ $(document).ready(function() {
     $("#output").empty();
     var countTo = $("#countTo").val();
     var countBy = 1
+    var size;
+    var yayaya;
     for (i = countBy; i <= countTo; i += countBy) {
       if (i % 3 === 0 && i % 5 === 0) {
-        $("#output").append("<li>" + "pingpong" + "</li>");
+        debugger;
+        size = Math.floor(Math.random()*500);
+        if (size < 125) {
+          yayaya = "small";
+        } else if (size >= 125 && size < 250 ) {
+          yayaya = "medium";
+        } else if (size >= 250 && size < 375) {
+          yayaya = "big"
+        } else if (size >= 375) {
+          yayaya = "biggest"
+        }
+        $("#output").append("<div>" + "<p>" + "pingpong" + "</p>" + "</div>").find('div:last').addClass(yayaya);
+        // $("#output div").addclass("4");
       } else if (i % 3 === 0) {
-        $("#output").append("<li>" + "ping" + "</li>");
+        size = Math.floor(Math.random()*500);
+        if (size < 125) {
+          yayaya = "small";
+        } else if (size >= 125 && size < 250 ) {
+          yayaya = "medium";
+        } else if (size >= 250 && size < 375) {
+          yayaya = "big"
+        } else if (size >= 375) {
+          yayaya = "biggest"
+        }
+        $("#output").append("<div>" + "<p>" + "ping" + "</p>" + "</div>").find('div:last').addClass(yayaya);
       } else if (i % 5 === 0) {
-        $("#output").append("<li>" + "pong" + "</li>");
+        size = Math.floor(Math.random()*500);
+        if (size < 125) {
+          yayaya = "small";
+        } else if (size >= 125 && size < 250 ) {
+          yayaya = "medium";
+        } else if (size >= 250 && size < 375) {
+          yayaya = "big"
+        } else if (size >= 375) {
+          yayaya = "biggest"
+        }
+        $("#output").append("<div>" + "<p>" + "pong" + "</p>" + "</div>").find('div:last').addClass(yayaya);
       } else {
-        $("#output").append("<li>" + i + "</li>");
+        size = Math.floor(Math.random()*500);
+        if (size < 125) {
+          yayaya = "small";
+        } else if (size >= 125 && size < 250 ) {
+          yayaya = "medium";
+        } else if (size >= 250 && size < 375) {
+          yayaya = "big"
+        } else if (size >= 375) {
+          yayaya = "biggest"
+        }
+        $("#output").append("<div>" + "<p>" + i + "</p>" + "</div>").find('div:last').addClass(yayaya);
       }
     };
 
-
-
+    // color = Math.floor(Math.random()*500);
+    // size = Math.floor(Math.random()*500);
+    // if (color < 175) {
+    //   .addClass()
+    // } else if (color >= 175 && color < 350 ) {
+    //   .addClass()
+    // } else if (color >= 350) {
+    //   .addClass()
+    // }
+    // if (size < 125) {
+    //   $("#output").find('div:last').addClass("1");
+    // } else if (size >= 125 && size < 250 ) {
+    //   $("#output").find('div:last').addClass("2");
+    // } else if (size >= 250 && size < 375) {
+    //   $("#output").find('div:last').addClass("3");
+    // } else if (size >= 375) {
+    //   $("#output").find('div:last').addClass("4");
+    // }
 
   });
 });
