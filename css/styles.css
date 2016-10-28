@@ -2,10 +2,6 @@ body {
   background-color: #5499C7;
 }
 
-#output {
-  /*background-color: #fff;*/
-}
-
 body .container #output div {
   width: auto;
   float: left;
@@ -20,6 +16,11 @@ body .container #output div p {
 
 h1 {
   font-family: 'Roboto Mono', monospace;
+  color: #fff;
+}
+
+.spacetop {
+  margin-top: 40px;
 }
 
 .small {
@@ -52,6 +53,10 @@ h1 {
 
 .yellow {
   color: #F1C40F;
+}
+
+.redback {
+  background-color: #EC7063;
 }
 
 .coiny {
