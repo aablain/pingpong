@@ -10,6 +10,16 @@ body .container #output div {
   width: auto;
   float: left;
   font-weight: bold;
+  margin: 0;
+  /*font-family: 'Coiny', cursive;*/
+}
+
+body .container #output div p {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
 }
 
 .small {
@@ -33,7 +43,7 @@ body .container #output div {
 }
 
 .red {
-  color : #E74C3C;
+  color : #EC7063;
 }
 
 .white {
@@ -42,4 +52,20 @@ body .container #output div {
 
 .yellow {
   color: #F1C40F;
+}
+
+.coiny {
+  font-family: 'Coiny', cursive;
+}
+
+.inconsolata {
+  font-family: 'Inconsolata', monospace;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.shadows {
+  font-family: 'Shadows Into Light', cursive;
 }

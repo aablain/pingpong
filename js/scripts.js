@@ -31,7 +31,24 @@ function decidingColor(wawawa) {
     yayaya = "yellow"
     return yayaya;
   }
-}
+};
+
+function decidingFont(wawawa) {
+  color = Math.floor(Math.random()*500);
+  if (color < 125) {
+    yayaya = "coiny";
+    return yayaya;
+  } else if (color >= 125 && color < 250 ) {
+    yayaya = "inconsolata";
+    return yayaya;
+  } else if (color >= 250 && color < 375) {
+    yayaya = "pacifico"
+    return yayaya;
+  } else if (color >= 375) {
+    yayaya = "shadows"
+    return yayaya;
+  }
+};
 
 
 //Use Interface Log
@@ -44,24 +61,29 @@ $(document).ready(function() {
     var size;
     var yayaya;
     var wawawa;
+    var rarara;
     for (i = countBy; i <= countTo; i += countBy) {
       if (i % 3 === 0 && i % 5 === 0) {
-        debugger;
+        // debugger;
         var cat = deciding(yayaya);
         var dog = decidingColor(wawawa);
+        var frog = decidingFont(rarara);
         $("#output").append("<div>" + "<p>" + "pingpong" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog);
       } else if (i % 3 === 0) {
         var cat = deciding(yayaya);
         var dog = decidingColor(wawawa);
-        $("#output").append("<div>" + "<p>" + "ping" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog);
+        var frog = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + "ping" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog).addClass(frog);
       } else if (i % 5 === 0) {
         var cat = deciding(yayaya);
         var dog = decidingColor(wawawa);
-        $("#output").append("<div>" + "<p>" + "pong" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog);
+        var frog = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + "pong" + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog).addClass(frog);
       } else {
         var cat = deciding(yayaya);
         var dog = decidingColor(wawawa);
-        $("#output").append("<div>" + "<p>" + i + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog);
+        var frog = decidingFont(rarara);
+        $("#output").append("<div>" + "<p>" + i + "</p>" + "</div>").find('div:last').addClass(cat).addClass(dog).addClass(frog);
       }
     };
 
